@@ -1,0 +1,54 @@
+import java.sql.SQLOutput;
+import java.util.Scanner ;
+
+        public class calculadora {
+
+            public static void main(String[] args) {
+
+            Scanner sc = new Scanner(System.in);
+
+
+            System.out.println("digite um número");
+
+            double um = sc.nextDouble();
+
+            System.out.println("digite outro número");
+            double dois = sc.nextDouble();
+
+
+            System.out.println("escolha a operação desejada:");
+            System.out.println("1 - soma");
+            System.out.println("2- subtração");
+            System.out.println("3- multiplicação");
+            System.out.println("4 - divisão");
+            int conta = sc.nextInt();
+
+            double resultado = 0;
+
+                    switch (conta) {
+
+                    case 1:
+
+                        resultado = um + dois;
+                        System.out.println("A soma é " + resultado);
+                        break;
+                    case 2:
+                        resultado = um - dois;
+                        System.out.println("A subtração é " + resultado);
+                        break;
+
+                    case 3:
+                        resultado = um * dois;
+                        System.out.println("A multiplicação é " + resultado);
+                        break;
+
+                    case 4:
+                        resultado = um / dois;
+                        System.out.println("A divisão é " + resultado);
+                        break;
+
+                    default:
+                        System.out.println("Operação inválida");
+                }
+            }
+        }
